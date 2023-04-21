@@ -33,7 +33,7 @@ int somaW, somaV;
         scanf("%d", &w[i]);
     }
 
-    somar(v, w, &somaV, &somaW);
+    somar(v, w, &somaV, &somaW); // aqui chamamos a função; repare que é &somaV e &somaW, são os endereços;
 
     printf("Valor do vetor V: %d\n", somaV);
     printf("Valor do vetor V: %d\n", somaW);
