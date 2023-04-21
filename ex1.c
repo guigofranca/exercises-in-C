@@ -67,8 +67,8 @@ int qtdZeros, linhaNula = 0, colunaNula = 0;
         // ou seja, {0, 0}  linha [0] > valor do j sendo [0] é igual a 0, valor do j sendo [1] é igual a 0; TODOS OS VALORES DE J É IGUAL A 0, OU SEJA, VAI SER UMA LINHA TODA NULA
         //          {1, 0}  linha [1] > valor do j sendo [0] é igual a 1, valor do j sendo [1] é igual a 0; PELO MENOS UM DOS VALORES DE J É DIFERENTE DE 0, OU SEJA, NAO VAI SER UMA LINHA TODA NULA
         // portanto, a primeira linha é uma linha nula, ou seja, linhaNula++
-        // a segunda linha não é;
-        // quantidade de linhas nulas nessa matriz > 1;
+        // depois de percorrer o looping de novo no mesmo esquema acima, percebemos que a segundo linha não é totalmente nula;
+        // ou seja, quantidade de linhas nulas nessa matriz > 1;
     }
 
     //COLUNAS
