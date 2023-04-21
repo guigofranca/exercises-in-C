@@ -33,24 +33,51 @@ int soma = 0;
 
         // se ( countNumero % i == 0 ) faça: div++; Nesse momento o countNumero é 2; o countNumero dividido pelo i atual é igual a zero? ( i atual é 1 );
         // sim, ele é, então vamos fazer div + 1;
-        // fim do primeiro looping
-        // O countNumero dividido pelo i atual é igual a zero? ( i atual é 2 )
-        // count % i tem resto diferente de 0;
-        // ou seja, não vamos incrementar 1 na variável div;
-        // looping finalizado
+        // como i = 2, ele não entra no looping mais;
+        // agora entramos no segundo if:  ( div == 1 );
+        // se o primeiro if ( countNumero % i == 0 ) nos der div == 1, ele é PRIMO;
+        // um número é primo *nesse caso* quando ele é divisível apenas pelo número 1;
+        // então faremos a soma desse número e guardar na variavel soma;
+        // contador++ ( contagem de números primos );
+        // no final do for temos um incremento para o countNumero; agora ele vai ser 3; countNumero = 3;
+        // fim do primeiro looping;
+        
+        // segundo looping
+        // countNumero = 3;
+        // countNumero % i tem resto igual a 0;
+        // ou seja, vamos incrementar 1 na variável div;
+        // div = 1;
+        // o for vai ficar em looping até o i < countNumero;
+        // terminando esse for, percebemos que o div vai ser igual a 1 de novo; ou seja, ele é PRIMO;
+        // fim do segundo looping;
 
-        // se ( div == 1 ) faça: soma = soma + countNumero; contador++;
-        // nesse if verificamos que, se o countNumero atual for primo eu faço a soma dele com a variavel soma;
-        // depois contador++; esse contador é a quantidade de números primos que temos no total;
-        // como o countNumero atual é 2, e ele é primo ( nós acabamos de verificar ); o contador vai ser incrementado, tendo o valor 1 agora;
+        // até o momento temos 2 números primos: 2 e 3;
+        
+        // terceiro looping
+        // countNumero = 4;
+        // countNumero % i tem resto igual a 0;
+        // ou seja, vamos incrementar 1 na variável div; div = 1;
+        // perceba que quando o i for igual a 2 ele vai ter o resto igual a 0; ou seja, div++;
+        // então temos o div tendo valor de 2 no momento;
+        // o PRIMO só vai ser primo se o div for igual a 1;
+        // logo o countNumero = 4 não é primo;
+        // fim do terceiro looping;
+        
+        // quarto looping
+        // countNumero = 5;
+        // aqui é só refazer todos os passos acima e verificar se é ou não primo;
+        // fim do quarto looping;
+        
+        // quinto looping? não!
+        // aqui termina o progama, já que encontramos os três primeiros números primos ( nós escolhemos que foi o número 3 );
 
-
-        countNumero++; // aqui fazemos countNumero++ para verificar o próximo número, no próximo looping; ele vai ter valor 3 agora;
+        countNumero++; // aqui fazemos countNumero++ para verificar o próximo número, no próximo looping;
 
     }
     // depois de fazer o teste de mesa, quando achar os 3 primeiros números primos, o looping vai parar;
     // 2, 3, 5; esses são os três primeiros números;
-    // a soma deles é de 10;
+    // OUTPUT
+    // Soma: 10
 
     printf("Soma: %d\n", soma);
 }
