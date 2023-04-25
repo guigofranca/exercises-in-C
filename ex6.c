@@ -8,10 +8,12 @@
 int procurar(int *v, int numero) {
 
 int i;
+int index;
 
     for ( i = 0; i < 3; i ++ ) {
         if ( v[i] == numero ) { // condição para verificar se o número digitado pelo usuário existe;
-            return 1; // se ele existir, vamos retornar o valor 1;
+            index = i; // salvar o índice de onde está o numero;
+            return index; // se ele existir, vamos retornar o valor do índice no vetor;
         }
     }
 
